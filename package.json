@@ -1,0 +1,27 @@
+{
+	"name": "abobylev",
+	"version": "1.0.0",
+	"description": "Алексей Бобылев",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "pingy dev",
+		"export": "pingy export"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Aleksey157860/ABobylev.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Aleksey157860/ABobylev/issues"
+	},
+	"homepage": "https://github.com/Aleksey157860/ABobylev#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"node-sass": "^4",
+		"@pingy/cli": "^0.10.4"
+	}
+}
