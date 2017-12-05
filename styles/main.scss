@@ -1,5 +1,4 @@
-$heading-color: hotpink;
-
-h1 {
-  color: $heading-color;
-}
+@import 'styles/variables.scss';
+@import 'styles/mixin.scss';
+@import 'styles/blocks/body.scss';
+@import 'styles/blocks/main-header.scss';
