@@ -1,33 +1,35 @@
 .main-header {
 	background-color: $header_bg_color;
-	color: $title_color;
+	color: #000;
 	font-size: $font_size;
-	text-transform: $text_transform;
+	text-transform: uppercase;
+
 	a {
 		display: inline-block;
-		color: $title_color;
+		color: #000;
 		text-decoration: none;
 	}
-	div {
+	&-navigation {
 		@include clearfix;
-		@include container;
 	} 
 }
 
 .header-logo {
 	float: left;
 	padding-top: 45px;
+
 	&:hover {
 		opacity: 0.8;
 	}
 	&:active {
-	opacity: 0.3;
+		opacity: 0.3;
 	}
 }
 
 .header-nav {
 	float: left;
 	padding-left: 177px;
+
 	&__item {
 		font-weight: 600;
 		float: left;
@@ -37,38 +39,41 @@
 		margin-right: 23px;
 		padding-top: 75px;
 		padding-bottom: 19px;
+
 		&:hover {
-		color: #fb565a;
+			color: #fb565a;
 		}
 		&:active {
-		color: #000000;
-		opacity: 0.3;
+			color: #000000;
+			opacity: 0.3;
 		}
 	}
-	ul {
+	&__list {
 		@include clearfix;
 	}
 }
 
 .header-basket {
 	float: right;
+
 	&__item {
 		font-weight: 600;
 	}
 	&__item::before {
-		content: url(img/icon-basket.png);
+		content: url(../img/icon-basket.png);
 		opacity: 0.3;
 		padding-right: 25px;
 	}
 	&__link {
 		padding-top: 75px;
 		padding-bottom: 19px;
+		
 		&:hover {
-		color: #fb565a;
+			color: #fb565a;
 		}
 		&:active {
-		color: #000000;
-		opacity: 0.3;
+			color: #000000;
+			opacity: 0.3;
 		}
 	@include clearfix;
 	}

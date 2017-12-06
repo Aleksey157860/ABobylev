@@ -1,4 +1,11 @@
-@import 'variables.scss';
-@import 'mixin.scss';
-@import 'blocks/body.scss';
-@import 'blocks/main-header.scss';
+@import './normalize.scss';
+@import './fonts.scss';
+@import './html.scss';
+@import './variables.scss';
+@import './mixin.scss';
+
+@import './blocks/body.scss';
+@import './blocks/header.scss';
+@import './blocks/footer.scss';
+
+@import './blocks/index/main-slider.scss';

@@ -10,10 +10,10 @@
 </head>
 <body>
 	<header class="main-header">
-		<div>
+		<div class="main-header-navigation container">
 			<a class="header-logo"><img src="img/header-logo.png" alt="logo" width="160" height="65"></a>
 			<nav class="header-nav">
-				<ul>
+				<ul class="header-nav__list">
 					<li class="header-nav__item"><a class="header-nav__link" href="#">Студия</a></li>
 					<li class="header-nav__item"><a class="header-nav__link" href="#">Клиенты</a></li>
 					<li class="header-nav__item"><a class="header-nav__link" href="catalog.html">Магазин</a></li>
@@ -109,40 +109,23 @@
 	</main>
 	<footer class="main-footer">
 		<section class="footer-location">
-			<div class="our-address">
-				<address class="address">
-					<b class="address__title">Nёrds design studio</b>
-					<span class="address__text">191186, Санкт-Петербург,<br>
-					ул. Б. Конюшенная, д. 19/8</span>
-					тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-				</address>
-				<a class="address__button" href="#">Напишите нам</a>
-				<section class="footer-modal">
-					<a class="modal__exit">Выход</a>
-					<h2 class="modal__title">Напишите нам</h2>
-					<form class="modal__form">
-						<div class="form__item">
-							<span class="modal__field">Ваше имя:</span>
-							<input class="modal__input" id="your-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-						</div>
-						<div class="form__item">
-							<span class="modal__field">Ваш e-mail:</span>
-							<input class="modal__input" id="your-email" type="email" name="e-mail" placeholder="Для отправки ответа">
-						</div>
-						<div class="form__item">
-							<span class="modal__field">Текст письма:</span>
-							<textarea class="modal__input" id="your-text" type="text" name="text" placeholder="В свободной форме"></textarea>
-						</div>
-						<button class="modal__button" type="submit">Отправить</button>
-					</form>
-				</section>
+			<div class="our-address container">
+				<div class="our-address__contacts">
+					<address class="address">
+						<b class="address__title">Nёrds design studio</b>
+						<span class="address__text">191186, Санкт-Петербург,<br>
+						ул. Б. Конюшенная, д. 19/8</span>
+						тел. <a  class="address__tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
+					</address>
+					<a class="button address__button" href="#">Напишите нам</a>
+				</div>
 			</div>
 		</section>
-		<section class="footer-social">
+		<section class="footer-social container">
 			<ul class="social__icons">
-				<li><a class="social-vk social__btn" href="#">VK</a></li>
-				<li><a class="social-fb social__btn" href="#">FaceBook</a></li>
-				<li><a class="fsocial-ig social__btn" href="#">Instagram</a></li>
+				<li class="social__item"><a class="social-vk social__btn" href="#">VK</a></li>
+				<li class="social__item"><a class="social-fb social__btn" href="#">FaceBook</a></li>
+				<li class="social__item"><a class="social-ig social__btn" href="#">Instagram</a></li>
 			</ul>
 			<div class="social__discount-friends">
 				<b class="social__title">Давайте дружить, это выгодно!</b><br>
