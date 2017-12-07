@@ -1,0 +1,90 @@
+.main-services {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	border-bottom: 2px solid #eeeeee;
+	
+	&__item {
+		float: left;
+		width: 33.33%;
+	}
+	&__title {
+		margin: 0;
+		font-size: 24px;
+		padding-top: 163px;
+		color: #000000;
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 1.9;
+	}
+	&__text {
+		margin: 0;
+		padding-top: 9px;
+		padding-bottom: 32px;
+		padding-right: 140px;
+		line-height: 1.5;
+	}
+	&__button {
+		display: inline-block;
+		padding: 16px 40px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #ffffff;
+		border-radius: 4px;
+	}
+	@include clearfix;
+}
+
+.websites {
+	background-position: left top;
+	background-image: url(../img/websites.jpg);
+	background-repeat: no-repeat;
+}
+
+.apps {
+	background-position: left top;
+	background-image: url(../img/apps.jpg);
+	background-repeat: no-repeat;
+}
+
+.presentations {
+	background-position: left top;
+	background-image: url(../img/presentations.jpg);
+	background-repeat: no-repeat;
+}
+
+.btn--red {
+	background-color: #fb565a;
+
+	&:hover {
+		background-color: #e74246;;
+	}
+	&:active {
+		background-color: #d7373b;
+		color: rgba(255,255,255,.3);
+	}
+}
+
+.btn--green {
+	background-color: #00ca74;
+
+	&:hover {
+		background-color: #00bc6c;
+	}
+	&:active {
+		background-color: #00aa62;
+		color: rgba(255,255,255,.3);
+	}
+}
+
+.btn--yellow {
+	background-color: #efc849;
+
+	&:hover {
+		background-color: #eab534;
+	}
+	&:active {
+		background-color: #e5a722;
+		color: rgba(255,255,255,.3);
+	}
+}
+

@@ -92,5 +92,8 @@
 		background-image: url("../img/insta-icon.png");
 		background-repeat: no-repeat;
 	}
+}
 
+.footer-social {
+	@include clearfix;
 }

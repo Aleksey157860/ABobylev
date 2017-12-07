@@ -1,0 +1,68 @@
+.concept {
+	padding-top: 25px;
+	padding-bottom: 62px;
+	border-bottom: 2px solid #eeeeee;
+
+	@include clearfix;
+
+	&-basis {
+		float: left;
+		width: 660px;
+	}
+	&-progress {
+		float: right;
+		padding-top: 15px;
+		width: 360px;
+	}
+	&__title {
+		font-size: 45px;
+		color: #000000;
+		padding-top: 50px;
+		padding-bottom: 32px;
+		margin: 0;
+		font-weight: 600;
+		line-height: 1;
+	}
+	&__small-title {
+		font-size: 16px;
+		color: #000000;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	&__text {
+		margin: 0;
+		padding-bottom: 42px;
+		line-height: 1.5;
+	}
+	&__list {
+		padding-top: 15px;
+	}
+	&__item {
+		line-height: 3;
+		position: relative;
+		padding-left: 35px;
+
+		&::before {
+			color: #fb565a;
+			content: "";
+			padding-right: 25px;
+			border-top: 2px solid #fb565a;
+			position: absolute;
+			top: 50%;
+			left: 0;
+		}
+	}
+	&__achievement {
+		@include clearfix;
+	}
+	&__value {
+		float: left;
+		width: 33.33%;
+
+		b {
+			font-size: 45px;
+			color: #000000;
+			line-height: 2;
+		}
+	}
+}

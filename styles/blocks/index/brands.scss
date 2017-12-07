@@ -1,0 +1,64 @@
+.brands {
+	height: 180px;
+	border-bottom: 2px solid #eeeeee;
+	/*
+	&__item {
+		float: left;
+		width: 25%;
+		height: 180px;
+		position: relative;
+	
+		&:not(:last-child)::before {
+			content: '';
+			border-left: 2px solid #eeeeee;
+			position: absolute;
+			right: 10px;
+			top: 35%;
+			width: 2px;
+			height: 52px;
+		}
+	}
+
+	&__link {
+		display: block;
+		width: 260px;
+		height: 180px;
+		opacity: 0.3;
+		font-size: 0px;
+
+		&:hover {
+			opacity: 1;
+		}
+		&:active {
+			opacity: 0.1;
+		}
+	}
+	*/
+	&__htmlacademy {
+		background-position: center;
+		background-image: url(../img/htmlacademy-logo.png);
+		background-repeat: no-repeat;
+	}
+
+	&__borodinski {
+		background-position: center;
+		background-image: url(../img/borodinski-logo.png);
+		background-repeat: no-repeat;
+	}
+
+	&__pinc {
+		background-position: center;
+		background-image: url(../img/pink-logo.png);
+		background-repeat: no-repeat;
+	}
+
+	&__mishka {
+		background-position: center;
+		background-image: url(../img/mishka-logo.png);
+		background-repeat: no-repeat;
+	}
+}
+
+.main-content {
+	padding-bottom: 80px;
+}
