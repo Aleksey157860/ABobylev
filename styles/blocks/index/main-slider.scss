@@ -1,18 +1,13 @@
 .main-slider {
 	background-color: #eeeeee;
 	position: relative;
-}	
-/*
-.slider {
-	height: 425px;
-	position: relative;
-	
+
 	&__control {
-		position: absolute;
-		top: 297px;
-		left: 770px;
-		z-index: 5;
-	}
+			position: absolute;
+			top: 297px;
+			left: 770px;
+			z-index: 5;
+		}
 
 	&__label {
 		display: inline-block;
@@ -29,7 +24,12 @@
 	&__input {
 		display: none;
 	}
+}
 
+.slider {
+	height: 425px;
+	position: relative;
+/*
 	&__slide {
 		visibility: hidden;
 		background-position: right bottom;
@@ -48,7 +48,7 @@
 		padding-right: 645px;
 		line-height: 1;
 	}
-
+*/
 	&__text {
 		font-weight: 400;
 		color: #283136;
@@ -99,7 +99,7 @@
 	top: 0;
 	left: 0;
 }
-
+/*
 #slider-1:checked ~ .slider [for="slider-1"] {
 	visibility: visible;
 }

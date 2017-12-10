@@ -1,7 +1,11 @@
 .brands {
 	height: 180px;
 	border-bottom: 2px solid #eeeeee;
-	/*
+	
+	&__list {
+		@include clearfix;
+	}
+
 	&__item {
 		float: left;
 		width: 25%;
@@ -33,7 +37,7 @@
 			opacity: 0.1;
 		}
 	}
-	*/
+	
 	&__htmlacademy {
 		background-position: center;
 		background-image: url(../img/htmlacademy-logo.png);
