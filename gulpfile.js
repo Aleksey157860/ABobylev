@@ -1,7 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
-var less = require("gulp-less");
+var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -17,9 +17,9 @@ var rename = require("gulp-rename");
 var run = require("run-sequence");
 
 gulp.task("style", function () {
-  gulp.src("less/style.less")
+  gulp.src("sass/style.scss")
     .pipe(plumber())
-    .pipe(less())
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -31,8 +31,8 @@ gulp.task("style", function () {
 });
 
 gulp.task("normalize", function () {
-  gulp.src("less/normalize.less")
-    .pipe(less())
+  gulp.src("sass/normalize.scss")
+    .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -42,7 +42,7 @@ gulp.task("normalize", function () {
     .pipe(gulp.dest("build/css"));
 });
 
-gulp.task("serve", function () {
+gulp.task("server", function () {
   server.init({
     server: "build/",
     notify: false,
@@ -51,7 +51,7 @@ gulp.task("serve", function () {
     ui: false
   });
 
-  gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("sass/**/*.scss", ["style"]);
   gulp.watch("img/*.svg", ["svgUpdate"]).on("change", server.reload);
   gulp.watch("*.html", ["html"]).on("change", server.reload);
 });
