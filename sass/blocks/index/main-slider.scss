@@ -1,0 +1,125 @@
+.main-slider {
+	background-color: #eeeeee;
+	position: relative;
+
+	&__control {
+			position: absolute;
+			top: 297px;
+			left: 770px;
+			z-index: 5;
+		}
+
+	&__label {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		margin: 8px;
+		background-color: #ffffff;
+		cursor: pointer;
+		font-size: 0;
+		position: relative;
+	}
+
+	&__input {
+		display: none;
+	}
+}
+
+.slider {
+	height: 425px;
+	position: relative;
+
+	&__slide {
+		visibility: hidden;
+		background-position: right bottom;
+		position: absolute;
+		right: 40px;
+		z-index: 1;
+		background-repeat: no-repeat;
+	}
+
+	&__title {
+		font-weight: 600;
+		margin: 0;
+		color: #000000;
+		font-size: 55px;
+		padding-top: 69px;
+		padding-right: 645px;
+		line-height: 1;
+	}
+
+	&__text {
+		font-weight: 400;
+		color: #283136;
+		margin: 0;
+		padding-top: 26px;
+		padding-bottom: 40px;
+		padding-right: 750px;
+		line-height: 1.5;
+	}
+
+	&__button {
+		margin-bottom: 82px;
+	}
+}
+
+#slider-1:checked ~ .slider__label:nth-child(1)::before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 2px solid #c1c1c1;
+	margin: 5px;
+	top: 0;
+	left: 0;
+}
+
+#slider-2:checked ~ .slider__label:nth-child(2)::before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 2px solid #c1c1c1;
+	margin: 5px;
+	top: 0;
+	left: 0;
+}
+
+#slider-3:checked ~ .slider__label:nth-child(3)::before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 2px solid #c1c1c1;
+	margin: 5px;
+	top: 0;
+	left: 0;
+}
+
+#slider-1:checked ~ .slider [for="slider-1"] {
+	visibility: visible;
+}
+
+#slider-2:checked ~ .slider [for="slider-2"] {
+	visibility: visible;
+}
+
+#slider-3:checked ~ .slider [for="slider-3"] {
+	visibility: visible;
+}
+
+.slide-1 {
+	background-image: url(../img/slide1.png);
+}
+
+.slide-2 {
+	background-image: url(../img/slide2.png);
+}
+
+.slide-3 {
+	background-image: url(../img/slide3.png);
+}

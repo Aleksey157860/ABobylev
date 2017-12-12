@@ -1,0 +1,13 @@
+.title-page {
+	min-width: 1180px;
+	padding-top: 68px;
+	padding-bottom: 100px;
+	background-color: #eeeeee;
+
+	&__title {
+		font-size: 55px;
+		color: #000000;
+		text-align: center;
+		font-weight: 600;
+	}
+}

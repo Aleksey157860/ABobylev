@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Nerds</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="main-header-navigation container">
+			<a class="header-logo"><img src="../img/header-logo.png" alt="logo" width="160" height="65"></a>
+			<nav class="header-nav">
+				<ul class="header-nav__list">
+					<li class="header-nav__item"><a class="header-nav__link" href="#">Студия</a></li>
+					<li class="header-nav__item"><a class="header-nav__link" href="#">Клиенты</a></li>
+					<li class="header-nav__item"><a class="header-nav__link" href="catalog.html">Магазин</a></li>
+					<li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="header-basket">
+				<li class="header-basket__item"><a class="header-basket__link" href="#">Корзина</a></li>
+			</ul>
+		</div>
+	</header>
+	<main class="main-content">
+		<section class="main-slider">
+			<input class="main-slider__input" type="radio" id="slider-1" name="slider" checked>
+			<input class="main-slider__input" type="radio" id="slider-2" name="slider">
+			<input class="main-slider__input" type="radio" id="slider-3" name="slider">
+			<section class="main-slider__control">
+				<label class="main-slider__label" for="slider-1">Первый слайд</label>
+				<label class="main-slider__label" for="slider-2">Второй слайд</label>
+				<label class="main-slider__label" for="slider-3">Третий слайд</label>
+			</section>
+			<div class="slider container">
+				<div class="slider__slide slide-1" for="slider-1"> 
+					<h2 class="slider__title">Долго, дорого,
+					скрупулезно.</h2>
+					<p class="slider__text">Математически выверенный дизайн
+					для вашего сайта или мобильного приложения.</p>
+					<a class="slider__button button" href="#">Узнать больше</a>
+				</div>
+				<div class="slider__slide slide-2" for="slider-2">
+					<h2 class="slider__title">Любим математику
+					как никто другой</h2>
+					<p class="slider__text">Никакого креатива, только математические формулы
+					для расчета идеальных пропорций.</p>
+					<a class="slider__button button" href="#">Узнать больше</a>
+				</div>
+				<div class="slider__slide slide-3" for="slider-3">
+					<h2 class="slider__title">Только ночь,
+					только&nbsp;хардкор</h2>
+					<p class="slider__text">Работать днем, как все? Мы&nbsp;против этого.
+					Ближе к&nbsp;полуночи работа только начинается.</p>
+				<a class="slider__button button" href="#">Узнать больше</a>
+				</div>
+			</div>
+		</section>
+		<section class="main-services container">
+			<div class="main-services__item websites">
+				<h3 class="main-services__title">Веб-сайты</h3>
+				<p class="main-services__text">Мир никогда не будет прежним
+				после того как увидит ваш сайт!</p>
+				<a class="main-services__button btn--red" href="#">Заказать</a>
+			</div>
+			<div class="main-services__item apps">
+				<h3 class="main-services__title">Приложения</h3>
+				<p class="main-services__text">Покорите топ-10 приложений
+				в&nbsp;AppStore и Google Play</p>
+				<a class="main-services__button btn--green" href="#">Заказать</a>
+			</div>
+			<div class="main-services__item presentations">
+				<h3 class="main-services__title">Презентации</h3>
+				<p class="main-services__text">Вы даже не подозреваете,
+				насколько вы изумительны!</p>
+				<a class="main-services__button btn--yellow" href="#">Заказать</a>
+			</div>
+		</section>
+		<section class="concept container">
+			<div class="concept-basis">
+				<h2 class="concept__title">Мы — маленькая, но гордая
+				дизайн-студия из Краснодара.</h2>
+				<p class="concept__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+				превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<h4 class="concept__small-title">Выполняем заказы на разработку:</h4>
+				<ul class="concept__list">
+					<li class="concept__item">Веб-сайтов любой сложности</li>
+					<li class="concept__item">Мобильных приложений для iOS и Android</li>
+					<li class="concept__item">Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div class="concept-progress">
+				<img class="concept__logo" src="../img/concept__logo.jpg" alt="Nerds" width="360" height="208">
+				<h4 class="concept__small-title">с 2004 года Любим точность во всем:</h4>
+				<ul class="concept__achievement">
+					<li class="concept__value"><b>146<sup>%</sup></b>
+					Уровень
+					самоотдачи</li>
+					<li class="concept__value"><b>100<sup>%</sup></b>
+					Соблюдение
+					сроков</li>
+					<li class="concept__value"><b>50<sup>%</sup></b>
+					Минимальная
+					предоплата</li>
+				</ul>
+			</div>
+		</section>
+		<section class="brands container">
+			<ul class="brands__list">
+				<li class="brands__item"><a class="brands__link brands__htmlacademy" href="#">HtmlAcademy</a></li>
+				<li class="brands__item"><a class="brands__link brands__borodinski" href="#">Borodinski</a></li>
+				<li class="brands__item"><a class="brands__link brands__pinc brands" href="#">Pinc</a></li>
+				<li class="brands__item"><a class="brands__link brands__mishka brands" href="#">Mishka</a></li>
+			</ul>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<section class="footer-location">
+			<div class="our-address container">
+				<div class="our-address__contacts">
+					<address class="address">
+						<b class="address__title">Nёrds design studio</b>
+						<span class="address__text">191186, Санкт-Петербург,<br>
+						ул. Б. Конюшенная, д. 19/8</span>
+						тел. <a  class="address__tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
+					</address>
+					<a class="button address__button" href="#">Напишите нам</a>
+				</div>
+			</div>
+		</section>
+		<section class="footer-social container">
+			<ul class="social__icons">
+				<li class="social__item"><a class="social-vk social__btn" href="#">VK</a></li>
+				<li class="social__item"><a class="social-fb social__btn" href="#">FaceBook</a></li>
+				<li class="social__item"><a class="social-ig social__btn" href="#">Instagram</a></li>
+			</ul>
+			<div class="social__discount-friends">
+				<b class="social__title">Давайте дружить, это выгодно!</b><br>
+				Cкидка 10% для друзей из социальных сетей.
+			</div>
+		</section>
+	</footer>
+	<script src="js/main.js"></script>
+</body>

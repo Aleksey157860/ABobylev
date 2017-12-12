@@ -1,0 +1,19 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './html.scss';
+@import './variables.scss';
+@import './mixin.scss';
+
+@import './blocks/body.scss';
+@import './blocks/header.scss';
+@import './blocks/footer.scss';
+
+@import './blocks/index/main-slider.scss';
+@import './blocks/index/main-services.scss';
+@import './blocks/index/main-concept.scss';
+@import './blocks/index/brands.scss';
+
+@import './blocks/catalog/title-page.scss';
+@import './blocks/catalog/shop-page.scss';
+@import './blocks/catalog/main-filter.scss';
+@import './blocks/catalog/catalog-page.scss';

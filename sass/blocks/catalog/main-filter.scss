@@ -1,0 +1,193 @@
+.filter {
+	float: left;
+
+	&__title{
+		font-size: 18px;
+		color: #000000;
+		text-transform: uppercase;
+	}
+	&__input {
+		display: none;
+	}
+	&__label {
+		color: #283136;
+		position: relative;
+		cursor: pointer;
+		padding-left: 35px;
+		&:hover {
+			color: #000000;
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+	&__button {
+		padding: 16px 86px;
+		background-color: #eeeeee;
+		color: #000000;
+		font-weight: 600;
+		font-size: 16px;
+
+		&:hover {
+			background-color: #dfdfdf;
+		}
+		&:active {
+			background-color: #d5d5d5;
+			color: #959595;
+		}
+	}
+}
+
+.scale {
+	padding-top: 57px;
+	padding-bottom: 53px;
+}
+
+.scale-value {
+	width: 260px;
+	padding: 39px 27px;
+	background-color: #eeeeee;
+	margin: 0;
+
+	&__line {
+		height: 2px;
+		background-color:#d7dcde;
+	}
+	&__line-active {
+		position: relative;
+		height: 2px;
+		background-color: #00ca74;
+		width: 100%;
+		z-index: 1;
+	}
+	&__marker {
+		position: absolute;
+		padding: 0;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		border: none;
+		background-color: #ababab;
+		top: 0;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: #ffffff;
+			border-radius: 50%;
+			left: 1px;
+			top: 1px;
+			margin-left: -9px;
+			margin-top: -9px;
+			box-shadow: 0 3px 3px -1px rgba(0,0,0,.3);
+			z-index: -1;
+			cursor: pointer;
+		}
+		&:first-child {
+			left: 0;
+		}
+		&:last-child {
+			right: 0;
+		}
+	}
+	&__price-range {
+		margin-top: 15px;
+		text-transform: uppercase;
+
+		&__span {
+			display: inline-block;
+			text-align: center;
+			padding: 10px 0;
+			width: 80px;
+			background-color: #eeeeee;
+			margin-left: 12px;
+
+			&:first-child {
+				margin-right: 32px; 
+			}
+		}
+	}
+
+}
+
+.filter-grid {
+
+	&__label {
+		color: #283136;
+		position: relative;
+		cursor: pointer;
+		padding-left: 35px;
+		
+		&::before {
+			width: 25px;
+			height: 25px;
+			background-image: url(../img/radio-off.png);
+			background-repeat: no-repeat;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.4;
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+	&__input {
+		display: none;
+
+		&:checked + .filter-grid__label::before {
+			background-image: url(../img/radio-on.png);
+			background-repeat: no-repeat;
+		}
+	}
+	&__list {
+		padding-top: 7px;
+		padding-bottom: 42px;
+	}
+	&__item {
+		line-height: 2.5;
+	}
+}
+
+.filter-features {
+
+	&__label {
+		color: #283136;
+		position: relative;
+		cursor: pointer;
+		padding-left: 35px;
+
+		&::before {
+			width: 27px;
+			height: 23px;
+			background-image: url(../img/checkbox-off.png);
+			background-repeat: no-repeat;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.4;
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+	&__input {
+		display: none;
+
+		&:checked + .filter-features__label::before {
+			background-image: url(../img/checkbox-on.png);
+			background-repeat: no-repeat;
+		}
+	}
+	&__list {
+		padding-top: 7px;
+		padding-bottom: 42px;
+	}
+	&__item {
+		line-height: 2.5;
+	}
+}

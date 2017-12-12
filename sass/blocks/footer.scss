@@ -1,0 +1,99 @@
+.footer-location {
+	background-position: center;
+	background-image: url("../img/map.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.our-address {
+	padding-top: 54px;
+	padding-bottom: 47px;
+
+	&__contacts {
+		width: 320px;
+		height: 310px;
+		background-color: #ffffff;
+		padding: 50px;
+		color: #666666;
+	}
+}
+
+
+.address {
+	padding-bottom: 40px;
+
+	&__title {
+		font-size: 18px;
+		color: #000000;
+		text-transform: uppercase;
+	}
+	&__text {
+		display: block;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	&__tel {
+		font-size: 16px;
+		color: #666666;
+		text-decoration: none;
+	}
+}
+
+.social {
+	&__icons {
+		float: left;
+		width: 400px;
+		padding: 70px 0;
+	}
+	&__item {
+		float: left;
+	}
+	&__discount-friends {
+		float: left;
+		padding-top: 75px;
+		padding-bottom: 80px;
+		line-height: 36px;
+
+		b {
+			font-size: 36px;
+			color: #000000;
+			font-weight: 700;
+		}
+	}
+	&__btn {
+		font-size: 0px;
+		display: block;
+		height: 80px;
+		width: 80px;
+		background-color: #e1e1e1;
+		margin-right: 10px;
+		border-radius: 40px;
+
+		&:hover {
+			background-color: #e74246;
+		}
+		&:active {
+			background-color: #d7373b;
+		}
+
+	}
+	&-vk {
+		background-position: center;
+		background-image: url("../img/vk-icon.png");
+		background-repeat: no-repeat;
+	}
+	&-fb {
+		background-position: center;
+		background-image: url("../img/fb-icon.png");
+		background-repeat: no-repeat;
+	}
+	&-ig {
+		background-position: center;
+		background-image: url("../img/insta-icon.png");
+		background-repeat: no-repeat;
+	}
+}
+
+.footer-social {
+	@include clearfix;
+}
