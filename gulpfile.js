@@ -51,9 +51,15 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("sass/**/*.scss", ["style"]);
+  gulp.watch("sass/**/*.scss", ["style"]).on("change", server.reload);
   gulp.watch("img/*.svg", ["svgUpdate"]).on("change", server.reload);
   gulp.watch("*.html", ["html"]).on("change", server.reload);
+  gulp.watch("scripts/**/*.js", ["js"]).on("change", server.reload);
+});
+
+gulp.task("js", function () {
+  return gulp.src("scripts/**/*.js")
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("html", function () {
