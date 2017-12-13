@@ -21,7 +21,7 @@ gulp.task("style", function () {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer('last 2 versions')
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
@@ -34,7 +34,7 @@ gulp.task("normalize", function () {
   gulp.src("sass/normalize.scss")
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer('last 2 versions')
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
@@ -102,8 +102,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "img/**",
-    "js/**"
+    "img/**"
   ], {
     base: "."
   })
@@ -126,6 +125,7 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "html",
+    "js",
     done
   );
 });
