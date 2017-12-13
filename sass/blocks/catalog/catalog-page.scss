@@ -10,10 +10,9 @@
 }
 
 .sorting {
-	float: left;
-
+	
 	&__list {
-		
+		float: left;
 		@include clearfix;
 	}
 	&__item {
@@ -29,6 +28,7 @@
 		font-size: 18px;
 		color: #000000;
 		text-transform: uppercase;
+		margin: 0;
 	}
 	&__link {
 		font-size: 14px;

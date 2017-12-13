@@ -47,6 +47,9 @@
 			color: #000000;
 			opacity: 0.3;
 		}
+		&--selected {
+			box-shadow: 0 2px #fb565a;
+		}
 	}
 	&__list {
 		@include clearfix;
